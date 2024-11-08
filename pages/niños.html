@@ -3,52 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/niños.css">
+    <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <title>Rooney| Niños</title>
 </head>
-<body>
+<header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">Rooney</a>
+        <div class="container-fluid navbar-container">
+
+            <a class="navbar-brand" href="../index.html">
+                <img src="../ASSETS/logo/Rooney.png" alt="Logo de Rooney" class="logo-navbar">
+            </a>
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../pages/hombres.html">Hombres</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active" href="../pages/mujeres.html">Mujeres</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active" href="../pages/niños.html">Niños</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active" href="../pages/accesorios.html">Accesorios</a>
-                </li>
-            </ul>
+            
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav me-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pages/hombres.html">Hombres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../pages/mujeres.html">Mujeres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../pages/niños.html">Niños</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../pages/accesorios.html">Accesorios</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Escribir..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
             </div>
         </div>
-            <form class="d-flex" role="search">
-                <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Escribir..."
-                aria-label="Search"
-                />
-                <button class="btn btn-outline-success" type="submit">
-                Buscar
-                </button>
-            </form>
+    </nav>
+</header>
+
+<div class="banner"></div>
+
+<body>
+
+
+    <div class="container my-5">
+        <div class="row gy-4">
+
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="../ASSETS/zapatos hombre/zapato H1.jpg" alt="Producto 1">
+                    <div class="card-body">
+                        <p class="product-title">Sandalia brillante niño</p>
+                        <p class="product-price">$50,000</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="../ASSETS/zapatos hombre/zapato H2.jpg" alt="Producto 2">
+                    <div class="card-body">
+                        <p class="product-title">Zapatillas Jean</p>
+                        <p class="product-price">$40,000</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="../ASSETS/zapatos hombre/Zapato H3.jpg" alt="Producto 3">
+                    <div class="card-body">
+                        <p class="product-title">Gorros niños</p>
+                        <p class="product-price">$20,000</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="../ASSETS/zapatos hombre/Zapato H4.jpg" alt="Producto 4">
+                    <div class="card-body">
+                        <p class="product-title">Slip de goma niño</p>
+                        <p class="product-price">$30,000</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="../ASSETS/zapatos hombre/Zapato H5.jpg" alt="Producto 5">
+                    <div class="card-body">
+                        <p class="product-title">Gorro de lana negra niño</p>
+                        <p class="product-price">$25,000</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="../ASSETS/zapatos hombre/Zapato H6.jpg" alt="Producto 6">
+                    <div class="card-body">
+                        <p class="product-title">Mochila amarilla niño</p>
+                        <p class="product-price">$60,000</p>
+                    </div>
+                </div>
             </div>
         </div>
-        </nav>
+    </div>
+
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"
     ></script>
 </body>
+
+<footer class="footer bg-light py-4">
+    <div class="container">
+        <div class="row text-dark">
+
+            <div class="col-md-3">
+                <h6 class="fw-bold">INFO</h6>
+                <p>📍Avda. Ignacio de la Roza 4903 Oeste, Rivadavia, San Juan, Argentina.</p>
+                <p>Horarios de atención: Lunes a Sábados de 10:00 a 21:00</p>
+            </div>
+            
+
+            <div class="col-md-3">
+                <h6 class="fw-bold">SÍGUENOS</h6>
+                <p>📸 Rooney.sj</p>
+                <p>📘 Rooney San Juan</p>
+            </div>
+
+
+            <div class="col-md-3">
+                <h6 class="fw-bold">CONTACTO</h6>
+                <p>Trabaja con nosotros</p>
+                <p>📞 +54 92615123307</p>
+                <p>📧 rooney@gmail.com.ar</p>
+            </div>
+
+
+            <div class="col-md-3">
+                <h6 class="fw-bold">Entérate de información exclusiva, ofertas y lanzamientos de nuestros productos</h6>
+                <form class="d-flex mt-2">
+                    <input type="email" class="form-control me-2" placeholder="Email">
+                    <button type="submit" class="btn btn-dark">Suscribirme</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
 </html>
