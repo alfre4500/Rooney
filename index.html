@@ -3,123 +3,282 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
     <title>Rooney calzados</title>
   </head>
-
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid navbar-container">
-
-            <a class="navbar-brand" href="../index.html">
-                <img src="../ASSETS/logo/Rooney.png" alt="Logo de Rooney" class="logo-navbar">
-            </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav me-3">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../pages/hombres.html">Hombres</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="../pages/mujeres.html">Mujeres</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="../pages/niños.html">Niños</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="../pages/accesorios.html">Accesorios</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Escribir..." aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
-            </div>
-        </div>
-    </nav>
-</header>
   <body>
 
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <!-- Logo -->
+        <a href="/" class="logo-link">
+          <img
+            src="./ASSETS/logo/Rooney-removebg-preview.png"
+            alt="Rooney Logo"
+            class="logo"
+          />
+        </a>
+
+        <!-- Enlaces de navegación -->
+        <div class="nav-links">
+          <a href="./pages/hombres.html">Hombres</a>
+          <a href="/mujeres">Mujeres</a>
+          <a href="/ninos">Niños</a>
+          <a href="/accesorios">Accesorios</a>
+        </div>
+
+        <!-- Barra de búsqueda y iconos -->
+        <div class="nav-right">
+          <div class="search-container">
+            <input
+              type="text"
+              placeholder="¿Qué estás buscando?"
+              class="search-input"
+            />
+            <button class="search-button">
+              <img
+                src="./ASSETS/logo/icons8-search-more-50.png"
+                alt="Buscar"
+                class="search-icon"
+              />
+            </button>
+          </div>
+          <div class="nav-icons">
+            <a href="#" class="icon-link" data-bs-toggle="modal" data-bs-target="#cartModal">
+              <img
+                src="./ASSETS/logo/icons8-shopping-cart-50.png"
+                alt="Carrito"
+                class="nav-icon"
+              />
+            </a>
+            <a href="#" class="icon-link" data-bs-toggle="modal" data-bs-target="#userModal">
+              <img
+                src="./ASSETS/logo/icons8-user-50.png"
+                alt="Cuenta"
+                class="nav-icon"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
     <main>
-        <section>
-            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="../ASSETS/Ofertas/LUNES Y VIERNES 2X1.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./ASSETS/Ofertas que faltaban/OFERTA TIEMPO LIMITADO.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./ASSETS/Ofertas que faltaban/lueva temporada.png" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Siguiente</span>
-                </button>
-              </div>
-        </section>
-        <section>
-            <h4>TENDENCIAS</h4>
-            <div class="tarjetero">
-
+      <section>
+        <div
+          id="carouselExampleControlsNoTouching"
+          class="carousel slide"
+          data-bs-touch="false"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="../ASSETS/Ofertas/LUNES Y VIERNES 2X1.png"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
-        </section>
+            <div class="carousel-item">
+              <img
+                src="./ASSETS/Ofertas que faltaban/OFERTA TIEMPO LIMITADO.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./ASSETS/Ofertas que faltaban/lueva temporada.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControlsNoTouching"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControlsNoTouching"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </section>
+      <section>
+        <h4 class="tendencia">TENDENCIAS</h4>
+        <div class="tarjetero">
+          <div class="card-container">
+            <div class="image-container">
+              <img
+                src="./ASSETS/zapatos hombre/Zapato H6.jpg"
+                alt="Black Patent Leather Slingback"
+                class="card-image"
+              />
+              <svg class="eye-icon" viewBox="0 0 24 24">
+                <path
+                  d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"
+                  fill="#333"
+                />
+              </svg>
+            </div>
+            <h2 class="card-title">Zapato acordonado cuero marron</h2>
+            <p class="card-price">$110.00</p>
+          </div>
+          <div class="card-container">
+            <div class="image-container">
+              <img
+                src="./ASSETS/zapatos mujer/Zapatos M7.jpg"
+                alt="Black Patent Leather Slingback"
+                class="card-image"
+              />
+              <svg class="eye-icon" viewBox="0 0 24 24">
+                <path
+                  d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"
+                  fill="#333"
+                />
+              </svg>
+            </div>
+            <h2 class="card-title">Sandalia charol negro</h2>
+            <p class="card-price">$150.00</p>
+          </div>
+          <div class="card-container">
+            <div class="image-container">
+              <img
+                src="./ASSETS/zapatos niño/Zapatos N6.jpg"
+                alt="Black Patent Leather Slingback"
+                class="card-image"
+              />
+              <svg class="eye-icon" viewBox="0 0 24 24">
+                <path
+                  d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"
+                  fill="#333"
+                />
+              </svg>
+            </div>
+            <h2 class="card-title">Clogs de goma crudo</h2>
+            <p class="card-price">$45.00</p>
+          </div>
+          <div class="card-container">
+            <div class="image-container">
+              <img
+                src="./ASSETS/zapatos mujer/Zapatos M2.jpg"
+                alt="Black Patent Leather Slingback"
+                class="card-image"
+              />
+              <svg class="eye-icon" viewBox="0 0 24 24">
+                <path
+                  d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"
+                  fill="#333"
+                />
+              </svg>
+            </div>
+            <h2 class="card-title">Botas gamuza negra</h2>
+            <p class="card-price">$150.00</p>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
+    <footer class="footer bg-light py-4">
+      <div class="container">
+        <div class="row text-dark">
+          <div class="col-md-3">
+            <h6 class="fw-bold">INFO</h6>
+            <p>
+              📍Avda. Ignacio de la Roza 4903 Oeste, Rivadavia, San Juan,
+              Argentina.
+            </p>
+            <p>Horarios de atención: Lunes a Sábados de 10:00 a 21:00</p>
+          </div>
 
+          <div class="col-md-3">
+            <h6 class="fw-bold">SÍGUENOS</h6>
+            <p>📸 Rooney.sj</p>
+            <p>📘 Rooney San Juan</p>
+          </div>
+
+          <div class="col-md-3">
+            <h6 class="fw-bold">CONTACTO</h6>
+            <p>Trabaja con nosotros</p>
+            <p>📞 +54 92615123307</p>
+            <p>📧 rooney@gmail.com.ar</p>
+          </div>
+
+          <div class="col-md-3">
+            <h6 class="fw-bold">
+              Entérate de información exclusiva, ofertas y lanzamientos de
+              nuestros productos
+            </h6>
+            <form class="d-flex mt-2">
+              <input
+                type="email"
+                class="form-control me-2"
+                placeholder="Email"
+              />
+              <button type="submit" class="btn btn-dark">Suscribirme</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </footer>
+    <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body p-4">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h5 class="text-center mb-4">Inicia sesión con tu email y contraseña para acceder a tu cuenta</h5>
+            
+            <form>
+              <div class="mb-3">
+                <input type="email" class="form-control" id="emailInput" placeholder="Email">
+              </div>
+              <div class="mb-3">
+                <input type="password" class="form-control" id="passwordInput" placeholder="Contraseña">
+              </div>
+              <div class="mb-3">
+                <a href="#" class="text-decoration-none text-muted small">¿Olvidaste tu contraseña?</a>
+              </div>
+              <button type="submit" class="btn btn-dark w-100 mb-3">Ingresar</button>
+              <button type="button" class="btn btn-secondary w-100">Registrarme</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal Carrito -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body p-4">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h5 class="mb-4">Mi compra:</h5>
+            
+            <div class="text-center py-4">
+              <p class="mb-2">Aún no tienes productos en el carrito.</p>
+              <p class="text-muted">¡Explora y agrega lo que estás buscando!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
   </body>
-
-  <footer class="footer bg-light py-4">
-    <div class="container">
-        <div class="row text-dark">
-
-            <div class="col-md-3">
-                <h6 class="fw-bold">INFO</h6>
-                <p>📍Avda. Ignacio de la Roza 4903 Oeste, Rivadavia, San Juan, Argentina.</p>
-                <p>Horarios de atención: Lunes a Sábados de 10:00 a 21:00</p>
-            </div>
-            
-
-            <div class="col-md-3">
-                <h6 class="fw-bold">SÍGUENOS</h6>
-                <p>📸 Rooney.sj</p>
-                <p>📘 Rooney San Juan</p>
-            </div>
-
-
-            <div class="col-md-3">
-                <h6 class="fw-bold">CONTACTO</h6>
-                <p>Trabaja con nosotros</p>
-                <p>📞 +54 92615123307</p>
-                <p>📧 rooney@gmail.com.ar</p>
-            </div>
-
-
-            <div class="col-md-3">
-                <h6 class="fw-bold">Entérate de información exclusiva, ofertas y lanzamientos de nuestros productos</h6>
-                <form class="d-flex mt-2">
-                    <input type="email" class="form-control me-2" placeholder="Email">
-                    <button type="submit" class="btn btn-dark">Suscribirme</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</footer>
 </html>
