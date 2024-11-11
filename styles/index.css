@@ -126,7 +126,6 @@ body {
     height: 30px;
 }
 
-/* Banner de envío gratis */
 .shipping-banner {
     background-color: #FFD700;
     padding: 0.75rem;
@@ -146,7 +145,6 @@ body {
     opacity: 0.8;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .navbar {
         padding: 1rem;
@@ -173,9 +171,6 @@ body {
     }
 }
 
-/* ... (resto de estilos del navbar) ... */
-
-/* Carrusel */
 .carousel {
     position: relative;
     width: 100%;
@@ -228,7 +223,6 @@ body {
 .prev { left: 10px; }
 .next { right: 10px; }
 
-/* Sección Tendencias */
 .trends {
     padding: 2rem;
 }
@@ -282,7 +276,6 @@ body {
     color: #333;
 }
 
-/* Footer */
 footer {
     background: #f5f5f5;
     padding: 3rem 2rem;
@@ -310,7 +303,6 @@ footer {
     text-decoration: none;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -376,8 +368,7 @@ footer {
     flex-wrap: wrap;
     gap: 2rem;
 }
-/*tarjeta*/
-/* Estilos para las cards */
+
 .card-container {
     width: 300px;
     background: white;
@@ -389,34 +380,29 @@ footer {
 
   }
   
-  /* Contenedor wrapper para controlar el overflow */
   .image-wrapper {
     overflow: hidden;
     border-radius: 4px;
     margin-bottom: 12px;
   }
   
-  /* Contenedor de la imagen */
   .image-container {
     position: relative;
     width: 100%;
     height: 300px;
   }
-  
-  /* Imagen */
+
   .card-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
   }
-  
-  /* Efecto hover */
+
   .image-container:hover .card-image {
     transform: scale(1.2);
   }
-  
-  /* Icono del ojo */
+
   .eye-icon {
     position: absolute;
     top: 16px;
@@ -426,23 +412,20 @@ footer {
     opacity: 0.7;
     z-index: 1;
   }
-  
-  /* Título de la card */
+
   .card-title {
     font-size: 16px;
     color: #333;
     margin: 0 0 8px 0;
     font-weight: normal;
   }
-  
-  /* Precio de la card */
+
   .card-price {
     font-size: 14px;
     color: #666;
     margin: 0;
   }
-  /*modales*/
-  /* Estilos para los modales */
+
 .modal-content {
     border: none;
     border-radius: 8px;
@@ -486,4 +469,57 @@ footer {
 .btn-secondary:hover {
     background-color: #ddd;
     color: #333;
+} 
+
+
+.product-grid, .tarjetero {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+
+.product-card, .card-container {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.product-card:hover, .card-container:hover {
+    transform: scale(1.03);
+}
+
+
+.product-card img, .card-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.product-title, .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.product-price, .card-price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #888;
+}
+
+@media (max-width: 768px) {
+    .product-grid, .tarjetero {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
 }
