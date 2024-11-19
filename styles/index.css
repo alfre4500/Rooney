@@ -192,8 +192,12 @@ body {
 .carousel-content img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
+
+.carousel-item img{
+    object-fit: contain;
+
+} 
 
 .promo-text {
     position: absolute;
@@ -409,11 +413,6 @@ footer {
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
-  }
-  
-  /* Efecto hover */
-  .image-container:hover .card-image {
-    transform: scale(1.2);
   }
   
   /* Icono del ojo */
