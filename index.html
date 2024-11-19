@@ -14,57 +14,39 @@
   <body>
 
   <header>
-    <nav class="navbar">
-      <div class="nav-container">
-        <a href="/" class="logo-link">
-          <img
-            src="./ASSETS/logo/Rooney-removebg-preview.png"
-            alt="Rooney Logo"
-            class="logo"
-          />
-        </a>
-
-        <div class="nav-links">
-          <a href="./pages/hombres.html">Hombres</a>
-          <a href="./pages/mujeres.html">Mujeres</a>
-          <a href="./pages/niños.html">Niños</a>
-          <a href="./pages/accesorios.html">Accesorios</a>
-        </div>
-
-        <div class="nav-right">
-          <div class="search-container">
-            <input
-              type="text"
-              placeholder="¿Qué estás buscando?"
-              class="search-input"
-            />
-            <button class="search-button">
-              <img
-                src="./ASSETS/logo/icons8-search-more-50.png"
-                alt="Buscar"
-                class="search-icon"
-              />
-            </button>
-          </div>
-          <div class="nav-icons">
-            <a href="#" class="icon-link" data-bs-toggle="modal" data-bs-target="#cartModal">
-              <img
-                src="./ASSETS/logo/icons8-shopping-cart-50.png"
-                alt="Carrito"
-                class="nav-icon"
-              />
-            </a>
-            <a href="#" class="icon-link" data-bs-toggle="modal" data-bs-target="#userModal">
-              <img
-                src="./ASSETS/logo/icons8-user-50.png"
-                alt="Cuenta"
-                class="nav-icon"
-              />
-            </a>
-          </div>
-        </div>
+    <div class="nav-container">
+      <!-- Logo siempre visible -->
+      <a href="/" class="logo-link">
+          <img src="./ASSETS/logo/Rooney-removebg-preview.png" alt="Rooney Logo" class="logo">
+      </a>
+  
+      <!-- Botón hamburguesa -->
+      <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
       </div>
-    </nav>
+  
+      <!-- Contenido del menú móvil -->
+      <div class="mobile-menu">
+          <nav class="nav-links">
+              <a href="./pages/hombres.html">Hombres</a>
+              <a href="./pages/mujeres.html">Mujeres</a>
+              <a href="./pages/niños.html">Niños</a>
+              <a href="./pages/accesorios.html">Accesorios</a>
+          </nav>
+  
+        
+          <div class="nav-icons">
+              <a href="#" class="icon-link" data-bs-toggle="modal" data-bs-target="#cartModal">
+                  <img src="./ASSETS/logo/icons8-shopping-cart-50.png" alt="Carrito" class="nav-icon">
+              </a>
+              <a href="#" class="icon-link" data-bs-toggle="modal" data-bs-target="#userModal">
+                  <img src="./ASSETS/logo/icons8-user-50.png" alt="Cuenta" class="nav-icon">
+              </a>
+          </div>
+      </div>
+  </div>
   </header>
     <main>
       <section>
