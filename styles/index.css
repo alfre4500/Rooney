@@ -364,11 +364,7 @@ footer {
   font-weight: normal;
 }
 
-.card-price {
-  font-size: 14px;
-  color: #666;
-  margin: 0;
-}
+
 
 .modal-content {
   border: none;
@@ -451,17 +447,18 @@ footer {
 
 .product-title,
 .card-title {
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: bolder;
+  font-size: 1rem;
   margin: 0.5rem 0;
-  color: #333;
+  color: #333333;
 }
 
 .product-price,
 .card-price {
-  font-size: 1rem;
-  font-weight: bold;
-  color: #888;
+  font-weight:bolder;
+  font-size: 1.5rem;
+  color: #000000;
+  margin: 0;
 }
 .nav-icon{
   height: 25px;
